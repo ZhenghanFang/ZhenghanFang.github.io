@@ -1,1 +1,141 @@
-Hello World
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Zhenghan Fang</title>
+
+    <meta name="author" content="Zhenghan Fang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Zhenghan Fang
+                </p>
+                <p>
+                  I'm a PhD student at <a href="https://www.jhu.edu/">Johns Hopkins University</a> in Baltimore, affiliated with the <a href="https://www.bme.jhu.edu/">Department of Biomedical Engineering</a> and the <a href="https://www.minds.jhu.edu/">Mathematical Institute for Data Science</a>. I'm advised by <a href="https://sites.google.com/view/jsulam">Jeremias Sulam</a>. I am a recipient of the <a href="https://kavlijhu.org/funding/awards">Kavli NDI Distinguished Graduate Student Fellowship</a>.
+                </p>
+                <p>
+                  Previously, I received my M.S. in Biomedical Engineering from <a href="https://www.unc.edu/">University of North Carolina at Chapel Hill</a>  and my B.S. in Electronic Engineering from <a href="https://www.fudan.edu.cn/en/">Fudan University</a>. I have also worked as an algorithm engineer at <a href="https://www.keyamedical.com/">Keya Medical</a>.
+                </p>
+                
+                <p style="text-align:center">
+                  <a href="mailto:zfang23@jhu.edu">Email</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=O5HDpGwAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/ZhenghanFang">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/profile.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I'm interested in machine learning, inverse problems, medical imaging, and computer vision. My research focuses on theory and algorithms for interpretable and trustworthy machine learning for inverse problems, as well as deep learning methods for imaging neural fibers in the brain with magnetic resonance imaging.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src='images/lpn_relation.png' alt="lpn" width="80%">
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://zhenghanfang.github.io/learned-proximal-networks/">
+                  <span class="papertitle">What's in a Prior? Learned Proximal Networks for Inverse Problems</span>
+                </a>
+                <br>
+                <strong>Zhenghan Fang</strong>*,
+                <a href="https://sdbuchanan.com/">Sam Buchanan*</a>,
+                <a href="https://sites.google.com/view/jsulam">Jeremias Sulam</a>
+                <br>
+                <em>ICLR</em>, 2024
+                <br>
+                <a href="https://zhenghanfang.github.io/learned-proximal-networks/">project page</a>
+                /
+                <a href="https://iclr.cc/virtual/2024/poster/17978">talk</a>
+                /
+                <a href="https://arxiv.org/abs/2310.14344">arXiv</a>
+                /
+                <a href="https://github.com/Sulam-Group/learned-proximal-networks">code</a>
+                <p></p>
+                <p>
+                  Learned proximal networks (LPN) are deep neural networks that exactly parameterize proximal operators.
+                  When trained with our proposed proximal matching loss, they learn expressive and interpretable priors for real-world data distributions and enable convergent plug-and-play reconstruction in general inverse problems!
+                </p>
+              </td>
+            </tr>
+
+
+            <tr onmouseout="jump_stop()" onmouseover="jump_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='jump_image'><img src='images/deepsti_animation_7T_4ori.gif' style="width: 100%"></div>
+                  <img src='images/deepsti_animation_7T_4ori.gif' style="width: 100%">
+                </div>
+                <script type="text/javascript">
+                  function jump_start() {
+                    document.getElementById('jump_image').style.opacity = "1";
+                  }
+
+                  function jump_stop() {
+                    document.getElementById('jump_image').style.opacity = "0";
+                  }
+                  jump_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://www.sciencedirect.com/science/article/pii/S1361841523000890">
+                  <span class="papertitle">DeepSTI: Towards tensor reconstruction using fewer orientations in susceptibility tensor imaging</span>
+                </a>
+                <br>
+                <strong>Zhenghan Fang</strong>, <a href="https://kuoweilai.com/">Kuo-Wei Lai</a>, <a href="https://www.kennedykrieger.org/patient-care/faculty-staff/peter-van-zijl">Peter van Zijl</a>, <a href="https://scholar.google.com/citations?user=fakl0iYAAAAJ&hl=en">Xu Li</a>, <a href="https://sites.google.com/view/jsulam">Jeremias Sulam</a>
+                <br>
+                <em>Medical Image Analysis</em>, 2023
+                <br>
+                <a href="https://www.sciencedirect.com/science/article/pii/S1361841523000890">paper</a> /
+                <a href="https://github.com/Sulam-Group/DeepSTI-pytorch">code</a>
+                <p></p>
+                <p>We propose a data-driven deep unrolling approach for dipole inversion problem in susceptibility tensor imaging, reducing the number of head orientations that need to be acquired and closing the gap to clinical application. </p>
+              </td>
+            </tr>
+
+
+          </tbody></table>
+
+          
+          
+          
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:center;font-size:small;">
+                  This website template was adapted from <a href="https://jonbarron.info/">Jon Barron's academic website</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
