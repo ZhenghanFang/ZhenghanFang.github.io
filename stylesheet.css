@@ -68,10 +68,99 @@ a {
   text-decoration: none;
 }
 
+.publication-thumbnail-placeholder {
+  width: 80%;
+  aspect-ratio: 4 / 3;
+}
+
 a:focus,
 a:hover {
   color: #f09228;
   text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #eeeeee;
+  backdrop-filter: blur(8px);
+}
+
+.site-nav {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.site-nav-name {
+  color: #222;
+  font-size: 17px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.site-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 22px;
+}
+
+.site-nav-links a {
+  color: #444;
+  font-size: 14px;
+}
+
+.site-nav-name:hover,
+.site-nav-links a:hover {
+  color: #1772d0;
+}
+
+#about,
+#news,
+#research,
+#publications,
+#teaching {
+  scroll-margin-top: 72px;
+}
+
+@media (max-width: 600px) {
+  .site-nav {
+    padding: 12px 16px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .site-nav-links {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .site-nav-links a {
+    font-size: 13px;
+  }
+
+  #about,
+  #news,
+  #research,
+  #publications,
+  #teaching {
+    scroll-margin-top: 105px;
+  }
 }
 
 body,
@@ -94,6 +183,55 @@ h2 {
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
+}
+
+.news-table,
+.teaching-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.news-date {
+  padding: 7px 10px 7px 20px;
+  width: 18%;
+  vertical-align: top;
+  color: #666;
+  white-space: nowrap;
+}
+
+.news-year {
+  padding: 6px 20px 2px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.news-item {
+  padding: 7px 20px 7px 10px;
+  width: 82%;
+  vertical-align: top;
+}
+
+.teaching-item {
+  padding: 12px 20px;
+  width: 100%;
+  vertical-align: top;
+}
+
+.teaching-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.teaching-meta {
+  color: #666;
+}
+
+.teaching-item p {
+  margin: 8px 0 0;
 }
 
 .papertitle {
